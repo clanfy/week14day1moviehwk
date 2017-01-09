@@ -19755,6 +19755,7 @@
 	'use strict';
 	
 	var React = __webpack_require__(1);
+	var MovieList = __webpack_require__(160);
 	
 	var MovieBox = React.createClass({
 	  displayName: 'MovieBox',
@@ -19763,12 +19764,35 @@
 	    return React.createElement(
 	      'div',
 	      { className: 'movie-box' },
-	      'Hello World! I am the movie box!'
+	      'Hello World! I am the movie box!',
+	      React.createElement(MovieList, null)
 	    );
 	  }
 	});
 	
 	module.exports = MovieBox;
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var MovieList = React.createClass({
+	  displayName: 'MovieList',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'movie-list' },
+	      'Hello World, I am the movie list!'
+	    );
+	  }
+	});
+	
+	module.exports = MovieList;
 
 /***/ }
 /******/ ]);
