@@ -13,4 +13,4 @@ var Movie = React.createClass({
   }
 });
 
-module.exports = Comment;
+module.exports = Movie;
