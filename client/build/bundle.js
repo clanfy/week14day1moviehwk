@@ -19757,17 +19757,21 @@
 	var React = __webpack_require__(1);
 	var MovieList = __webpack_require__(160);
 	
-	var movies = [{ name: "Sausage Party", url: "http://www.imdb.com/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t0", showTimesURL: "http://www.imdb.com/showtimes/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }, { name: "Café Society", url: "http://www.imdb.com/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t1", showTimesURL: "http://www.imdb.com/showtimes/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }, { name: "Sausage Party", url: "http://www.imdb.com/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t0", showTimesURL: "http://www.imdb.com/showtimes/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }, { name: "Café Society", url: "http://www.imdb.com/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t1", showTimesURL: "http://www.imdb.com/showtimes/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }];
+	var movies = [{ id: 1, name: "Sausage Party", url: "http://www.imdb.com/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t0", showTimesURL: "http://www.imdb.com/showtimes/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }, { id: 2, name: "Café Society", url: "http://www.imdb.com/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t1", showTimesURL: "http://www.imdb.com/showtimes/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }, { id: 3, name: "Sausage Party", url: "http://www.imdb.com/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t0", showTimesURL: "http://www.imdb.com/showtimes/title/tt1700841?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }, { id: 4, name: "Café Society", url: "http://www.imdb.com/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_t1", showTimesURL: "http://www.imdb.com/showtimes/title/tt4513674?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=1970868962&pf_rd_r=10B79GWTXE5MERRSR82F&pf_rd_s=right-2&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_otw_gs" }];
 	
 	var MovieBox = React.createClass({
 	  displayName: 'MovieBox',
+	
+	
+	  getInitialState: function getInitialState() {
+	    return { data: movies };
+	  },
 	
 	  render: function render() {
 	    return React.createElement(
 	      'div',
 	      { className: 'movie-box' },
-	      'Hello World! I am the movie box!',
-	      React.createElement(MovieList, null)
+	      React.createElement(MovieList, { movies: this.state.data })
 	    );
 	  }
 	});
@@ -19781,20 +19785,62 @@
 	'use strict';
 	
 	var React = __webpack_require__(1);
+	var Movie = __webpack_require__(161);
 	
 	var MovieList = React.createClass({
 	  displayName: 'MovieList',
 	
 	  render: function render() {
+	    var movieComponents = this.props.movies.map(function (movieObject) {
+	      return React.createElement(
+	        Movie,
+	        { name: movieObject.name,
+	          key: movieObject.id },
+	        movieObject.url
+	      );
+	    });
 	    return React.createElement(
 	      'div',
 	      { className: 'movie-list' },
-	      'Hello World, I am the movie list!'
+	      movieComponents
 	    );
 	  }
 	});
 	
 	module.exports = MovieList;
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var Movie = React.createClass({
+	  displayName: 'Movie',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'movie' },
+	      React.createElement(
+	        'h6',
+	        { className: 'movieName' },
+	        this.props.name
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        ' ',
+	        this.props.children,
+	        ' '
+	      )
+	    );
+	  }
+	});
+	
+	module.exports = Movie;
 
 /***/ }
 /******/ ]);
