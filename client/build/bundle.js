@@ -48,13 +48,10 @@
 	
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
+	var MovieBox = __webpack_require__(159);
 	
 	window.onload = function () {
-	  ReactDOM.render(React.createElement(
-	    'h1',
-	    null,
-	    ' App Started '
-	  ), document.getElementById('app'));
+	  ReactDOM.render(React.createElement(MovieBox, null), document.getElementById('app'));
 	};
 
 /***/ },
@@ -19750,6 +19747,28 @@
 	
 	module.exports = __webpack_require__(3);
 
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var MovieBox = React.createClass({
+	  displayName: 'MovieBox',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'movie-box' },
+	      'Hello World! I am the movie box!'
+	    );
+	  }
+	});
+	
+	module.exports = MovieBox;
 
 /***/ }
 /******/ ]);
