@@ -19800,6 +19800,12 @@
 	          'a',
 	          { href: movieObject.url },
 	          movieObject.name
+	        ),
+	        React.createElement('br', null),
+	        React.createElement(
+	          'a',
+	          { href: movieObject.showTimesURL },
+	          'Show Times'
 	        )
 	      );
 	    });
@@ -19829,11 +19835,15 @@
 	      'div',
 	      { className: 'movie' },
 	      React.createElement(
-	        'h6',
-	        { className: 'movieName' },
+	        'p',
+	        { className: 'movie-name' },
 	        this.props.name
 	      ),
-	      this.props.children
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.children
+	      )
 	    );
 	  }
 	});

@@ -4,12 +4,12 @@ var Movie = React.createClass({
   render: function(){
     return (
       <div className='movie'>
-      <h6 className='movieName'>
+      <p className='movie-name'>
       {this.props.name}
-      </h6>
-      {this.props.children}
+      </p>
+      <p>{this.props.children}</p>
       </div>
-      );
+      )
   }
 });
 

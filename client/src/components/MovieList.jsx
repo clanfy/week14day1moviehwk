@@ -11,6 +11,11 @@ var MovieList = React.createClass({
         <a href={movieObject.url}>
         {movieObject.name}
         </a>
+        <br>
+        </br>
+        <a href={movieObject.showTimesURL}>
+        Show Times
+        </a>
         </Movie>
         )
     });
