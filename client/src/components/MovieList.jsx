@@ -6,9 +6,11 @@ var MovieList = React.createClass({
     var movieComponents = this.props.movies.map(function(movieObject)
     {
       return (
-        <Movie name={movieObject.name}
+        <Movie
         key={movieObject.id}>
-        {movieObject.url}
+        <a href={movieObject.url}>
+        {movieObject.name}
+        </a>
         </Movie>
         )
     });

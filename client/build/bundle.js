@@ -19794,9 +19794,13 @@
 	    var movieComponents = this.props.movies.map(function (movieObject) {
 	      return React.createElement(
 	        Movie,
-	        { name: movieObject.name,
+	        {
 	          key: movieObject.id },
-	        movieObject.url
+	        React.createElement(
+	          'a',
+	          { href: movieObject.url },
+	          movieObject.name
+	        )
 	      );
 	    });
 	    return React.createElement(
@@ -19829,13 +19833,7 @@
 	        { className: 'movieName' },
 	        this.props.name
 	      ),
-	      React.createElement(
-	        'p',
-	        null,
-	        ' ',
-	        this.props.children,
-	        ' '
-	      )
+	      this.props.children
 	    );
 	  }
 	});

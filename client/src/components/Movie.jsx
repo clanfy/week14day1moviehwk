@@ -7,10 +7,10 @@ var Movie = React.createClass({
       <h6 className='movieName'>
       {this.props.name}
       </h6>
-      <p> {this.props.children} </p>
+      {this.props.children}
       </div>
       );
-    }
-  });
+  }
+});
 
-  module.exports = Movie;
+module.exports = Movie;
